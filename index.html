@@ -1,14 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculate bmi</title>
-    <link rel="stylesheet" href="style.css">
+    <title>KALKULATOR BMI</title>
+    
+    <link rel="stylesheet" href="css/style.css"></head>
 </head>
 
 <body>
-    <script src="js/script.js"></script>
+    <header>
+        <h1>KALKULATOR BMI</h1>
+    </header>
+
+<!--bagian header atau bagian text atas-->
+
+    <main>
+        <div class="main-container">
+            <div class="contaier-item">
+              <h2>kalkulator BMI</h2>
+              <p>berat bandan ideal adalah impian semua orang. tidak hanya memiliki tubuh yang menunjang
+              penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat, bagaimana denganmu?
+              yuk,hitung sekarang di kalkulator BMI.</p>
+
+ <!--bagian label -->             
+
+              <div class="container-item">
+                <form action="index.html" method="post" 
+                style="background-color: aliceblue;">
+                    <h5>jenis kelamin</h5>
+                  <div>
+                    <input type="radio" name="gender" value="male">pria
+                    <label for="male"></label>
+                    <input type="radio" name="gender" value="female">wanita
+                </div>
+                
+                <p>
+                    <label for="weight">berat anda (kg):</label>
+                    <div>
+                        <input type="number" id="weight" name="weight">
+                    </div>
+                </p>
+                <p>
+                    <label for="weight">tinggi badan anda (cm):</label>    
+                    <div>
+                        <input type="number" id="height" name="height">
+                    </div>
+                </p>
+                <p>
+                    <label for="weight">usia (tahun) :</label>
+                    <div>
+                        <input type="number" id="age" name="age">
+                    </div>
+                </p>
+                <p>
+                    <button type="submit" style="background-color: lightskyblue;">hitung</button>      
+                    <button type="reset">reset</button> 
+                </p>                        
+                </form>
+                
     
+            </div>
+<!--bagian text bawah-->
+            <p><h3>keunggulan fitur</h3></p>
+            <p>
+                <li>menampilkan hasil dari kalkulator BMI</li>
+                <li> menentukan kategori berat badan ideal atau tidak.</li>
+                <li>menentukan kategori usia yang paling besar atau paling kecil.</li>
+            </p>
+
+            <p part="text"> kalkulator ini hanya boleh diginukan oleh orang dewasa (wanita hamilatau menyusui tidak boleh
+                mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus di ambil bedasarkan nilainya
+                selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+             </p>
+             <p part="text"> kalkulator akan memberikan gambaran tentang perbandingan berat badan anda dengan nilai
+                umum, indexs masa tubuh (atau BMI) di hutung sebagai berat badan anda (dalam kilogram) di bagia
+                dengan kuadrat tinggi badan anda (dalam meter) atau BMI=kg/m2.
+             </p>
+
+            
+
+
+
+            </div>
+<!--head dari bagian hasil-->            
+            
+        <div class="result-countainer">  
+             <h2>HASIL</h2>
+             <div class="result-countainer" style="text-align: center;">
+             </div>
+             <h4 style="background-color: aliceblue; text-align: center;"
+             id="padding-block:inherit;"> berat badan lebih 
+              <span id="bmi" title="number"></span>
+              <p aria-busy="true" style="font-size: xx-large;">0</p>
+              <p style="font-style:initial ;">.anda memiliki berat badan yang ideal</p>
+              <p>
+                <button type="button" style="background-color: lightskyblue;"
+                onclick="window.location.reload()">download hasil BMI mu di sini</button>
+              </p>
+                
+            </h4>
+ <!--hasil perbandingan-->           
+
+            <p>hasil BMI antara 0 banding 0</p>
+            <p>anda berada dalam kondisi overheight atau berat badan kekurangan.
+                cara terbaik untuk menaiakan berat badan adalah dengan cara makan dan tidur
+                sesuai dengan kebutuhan anda.
+                jika BMI anda berada dalam kategori ini maka anda dianjurkan untuk makan terus
+                hingga obesitas.
+            </p>
+            <button type="button" style="background-color: lightblue;" 
+            onclick="window.location.reload()">registrasi gizi via aplikasi</button>
+            <button type="button" style="background-color: lightblue;" 
+            onclick="window.location.reload()">registrasi online</button>
+
+            <p>
+            BMI tidak sepenuhnya mewakili diagonis menyuluruh dari kesehatan tubuh dan resiko penyakit
+            tubuh seorang. anda perlu konsultasi lebih lanjut mengenai resiko kekhwatiran anda terkait
+            dengan berat badan anda.
+            </p>
+<!--daftar penyakit dari kegemukan-->  
+
+             <h4 style="background-color: aliceblue; text-align: center;"
+             id="padding-block:inherit;"> beberapa penyakit dari kegemukan
+              <p>
+                <li>diabetes</li>
+
+                <li>hipertensi</li>
+
+                <li>sakit jantung</li>
+
+                <li>osteoarthritis</li>
+              </p>
+              <p>
+                <button type="button" style="background-color: lightblue;" 
+            onclick="window.location.reload()">registrasi gizi via aplikasi</button>
+            <button type="button" style="background-color: lightblue;" 
+            onclick="window.location.reload()">registrasi online</button>
+              </p>
+             </h4>
+<!--link google play-->  
+
+             <h4 style=" text-align: center;">Download Aplikasi</h4>
+             
+             <a href="https://play.google.com/store/apps/details?id=com.example.android.miwok&hl=en_US">
+             <img src="https://play.google.com/intl/en_us/badges/static/en_us/badges/in_app_review.png" alt="Get it on Google Play">
+             </a>
+
+             <a href="https://apps.apple.com/id/example/app/id1477376905">
+             <img src="https://apps.apple.com/app-store-badge/images/app-store-badge.svg" alt="Get it on the App Store">
+           </div>
+        </div>
+        
+    </main>
+    
+    <script src="js/script.js"></script>
+
+
+
+
+
+
 </body>
+
 </html>

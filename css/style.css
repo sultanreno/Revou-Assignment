@@ -1,0 +1,34 @@
+header>h1 {
+text-align: center;
+font-style: italic;
+background-color: aliceblue;
+
+}
+
+.main-container {
+    display: flex;
+}
+
+.main-container > div {
+    flex: 1;
+    padding: 10px;
+    border: 0px solid;
+    margin: 10px;
+    text-align: left;
+    font-size: 13px;
+    font-style:normal ;
+}
+
+.main-container {
+    border: 10px;
+    border-style: rgb(135, 118, 118) solid;
+}
+
+.main-container> label {
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(135, 118, 118);
+}
+
+
